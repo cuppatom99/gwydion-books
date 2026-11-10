@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Book Title | Official Author Page</title>
+    <title>Gwydion Books | Independent Press</title>
     <style>
         :root {
             --primary-color: #2c3e50;
-            --accent-color: #e67e22;
-            --bg-color: #f9f9f9;
+            --accent-color: #2c3e50;
+            --bg-color: #f7f9fa;
             --text-color: #333333;
         }
         body {
@@ -25,23 +25,24 @@
         }
         .container {
             background: #ffffff;
-            max-width: 800px;
+            max-width: 850px;
             width: 90%;
             margin: 20px;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-        @media (min-width: 650px) {
+        @media (min-width: 700px) {
             .container {
                 flex-direction: row;
                 text-align: left;
                 padding: 50px;
                 gap: 40px;
+                align-items: flex-start;
             }
         }
         .book-cover {
@@ -49,12 +50,13 @@
             width: 100%;
             height: auto;
             border-radius: 6px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            margin-bottom: 25px;
         }
-        @media (min-width: 650px) {
+        @media (min-width: 700px) {
             .book-cover {
                 margin-bottom: 0;
+                flex-shrink: 0;
             }
         }
         .content {
@@ -62,52 +64,65 @@
             flex-direction: column;
             justify-content: center;
         }
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        @media (min-width: 700px) {
+            .logo {
+                margin-left: 0;
+            }
+        }
         h1 {
             font-size: 2.2rem;
             color: var(--primary-color);
-            margin: 0 0 10px 0;
-        }
-        .subtitle {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 20px;
-            font-style: italic;
+            margin: 0 0 20px 0;
         }
         p {
             margin-bottom: 25px;
-            color: #555;
+            color: #444;
+            font-size: 1.05rem;
         }
         .btn {
             display: inline-block;
-            background-color: var(--accent-color);
+            background-color: var(--primary-color);
             color: white;
             padding: 12px 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
+            font-size: 1.05rem;
+            font-weight: 600;
             text-decoration: none;
             border-radius: 30px;
             transition: background 0.2s ease;
-            box-shadow: 0 4px 10px rgba(230, 126, 34, 0.3);
+            box-shadow: 0 4px 10px rgba(44, 62, 80, 0.2);
+            text-align: center;
+            width: fit-content;
         }
         .btn:hover {
-            background-color: #d35400;
+            background-color: #34495e;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Replace 'cover.jpg' with the actual filename of your book cover image -->
+        <!-- Book Cover Image (Positioned to the left on desktop) -->
         <img src="cover.jpg" alt="Book Cover" class="book-cover">
         
         <div class="content">
-            <h1>Your Book Title</h1>
-            <div class="subtitle">By Your Author Name</div>
-            <p>Write a short, gripping synopsis or description of your book here. Hook your readers, give them a hint of the journey inside, and make them eager to turn the page.</p>
+            <!-- Logo Above the Title -->
+            <img src="gwydionlogo.png" alt="Gwydion Books Logo" class="logo">
             
+            <!-- Main Title -->
+            <h1>Gwydion Books</h1>
+            
+            <!-- Blurb -->
+            <p>A small, voluntary-run independent press based in Britain, we champion imaginative stories that refuse to stay in one genre. Drawn to the surreal, the darkly humorous and the unexpected, we publish work that sheds fresh light on contemporary life.</p>
+            
+            <!-- Coming Soon Button / Amazon Link -->
             <div>
-                <!-- Replace '#' with your actual Amazon link -->
-                <a href="#" target="_blank" class="btn">Buy on Amazon</a>
+                <!-- Replace '#' with your actual Amazon link when ready -->
+                <a href="#" target="_blank" class="btn">Coming Soon</a>
             </div>
         </div>
     </div>
