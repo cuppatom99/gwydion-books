@@ -41,16 +41,24 @@
         }
         h1 {
             font-family: "Garamond", "Baskerville", "Times New Roman", serif;
-            font-size: 2.5rem;
+            font-size: 2.1rem; /* Scaled slightly to fit mobile screen widths */
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 0.5px; /* Reduced kerning so it stays on one line */
+            white-space: nowrap; /* Forces title onto a single line */
             color: #000000;
             margin: 0 0 20px 0;
+        }
+        @media (min-width: 500px) {
+            h1 {
+                font-size: 2.5rem;
+                letter-spacing: 1.5px;
+            }
         }
         .intro-blurb {
             font-family: "Garamond", "Baskerville", "Times New Roman", serif;
             font-size: 1.15rem;
+            font-weight: bold; /* Made bold as requested */
             color: #000000;
             max-width: 650px;
             margin: 0 auto 30px auto;
@@ -119,11 +127,11 @@
         <!-- Logo at top middle -->
         <img src="gwydionlogo.png" alt="Gwydion Books Logo" class="logo">
         
-        <!-- Main Title -->
+        <!-- Main Title (Forced to single line with adjusted kerning) -->
         <h1>Gwydion Books</h1>
         
-        <!-- Intro Blurb -->
-        <p class="intro-blurb">A small, voluntary-run independent press based in Britain, we champion imaginative stories that refuse to stay in one genre. Drawn to the surreal, the darkly humorous and the unexpected, we publish work that sheds fresh light on contemporary life.</p>
+        <!-- Intro Blurb (Bold) -->
+        <p class="intro-blurb">A small, voluntary-run independent UK press, we champion imaginative stories that refuse to stay in one genre. Drawn to the surreal, the darkly humorous and the unexpected, we publish work that sheds fresh light on contemporary life.</p>
         
         <!-- Separator Line (4pt thick, 3/4 width, centered) -->
         <hr class="divider">
